@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const sfpro = localFont({
   src: [
@@ -58,6 +59,7 @@ export default function RootLayout({
       <body className={sfpro.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="flex flex-col xl:h-screen w-full justify-center items-center">
+            <SpeedInsights />
             {children}
           </div>
         </ThemeProvider>

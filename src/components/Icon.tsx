@@ -8,6 +8,7 @@ const Icon = ({ icon }: { icon: string }) => {
       width={40}
       height={40}
       loading="lazy"
+      style={{ height: "auto", width: "auto" }}
     />
   );
 };
