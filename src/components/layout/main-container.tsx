@@ -6,7 +6,7 @@ import Footer from "./footer";
 const MainContainer = () => {
   return (
     <main className="flex flex-col justify-center h-full xl:flex-row flex-1 w-full gap-10 bg-slate-100 dark:bg-black">
-      <div className="flex-1 p-6 max-w-md">
+      <div className="flex-1 p-4 sm:p-6 max-w-md">
         <div className="flex items-center flex-col h-full rounded-md">
           <ProfileInfo />
           <div className="hidden xl:block w-full">
