@@ -12,13 +12,13 @@ const ProjectItem = ({ item }: { item: GridItemInterface }) => {
           target="_blank"
           href={item.buttonLink ?? ""}
         >
-          <Icon icon={item.icon ?? ""} />
+          <Icon icon={item.icon ?? { default: "" }} />
           <div className="w-full text-lg font-semibold">{item.title}</div>
         </Link>
       ) : item.layout === "2x2" ? (
         <div>
           <div className="flex items-center justify-between">
-            <Icon icon={item.icon ?? ""} />
+            <Icon icon={item.icon ?? { default: "" }} />
             {item.layout === "2x2" && item.buttonTitle && (
               <Link href={item.buttonLink ?? ""} target="_blank">
                 <GridItemButton
