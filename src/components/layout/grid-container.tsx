@@ -10,7 +10,7 @@ import { useEffect } from "react";
 const GridContainer = () => {
   const [scope, animate] = useAnimate();
   const staggerGridItems = stagger(0.02, {
-    startDelay: 0.5,
+    startDelay: 0,
   });
 
   useEffect(() => {
