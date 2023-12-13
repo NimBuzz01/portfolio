@@ -1,8 +1,7 @@
-import React from "react";
 import { Separator } from "../ui/separator";
 import Link from "next/link";
 import { CopyrightIcon } from "lucide-react";
-import ToggleTheme from "../ToggleTheme";
+import ToggleTheme from "../toggle-theme";
 
 const Footer = () => {
   return (

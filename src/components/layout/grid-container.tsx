@@ -1,12 +1,11 @@
 import { gridItems } from "@/config/grid-items";
-import React from "react";
-import GridItem from "../GridItem";
-import SocialItem from "../GridItems/SocialItem";
-import ExperienceItem from "../GridItems/ExperienceItem";
-import ProjectItem from "../GridItems/ProjectItem";
-import SkillItem from "../GridItems/SkillItem";
+import GridItem from "../grid-item";
+import SocialItem from "../grid-items/social-item";
+import ExperienceItem from "../grid-items/experience-item";
+import ProjectItem from "../grid-items/project-item";
+import SkillItem from "../grid-items/skill-item";
 
-const MainContent = () => {
+const GridContainer = () => {
   return (
     <div className="w-full h-full overflow-y-auto scrollbar-none scrollbar-thumb-neutral-500 scrollbar-track-gray-100 p-6 grid grid-cols-4 auto-rows-[76px] gap-6">
       {gridItems.map((item, index) => {
@@ -30,4 +29,4 @@ const MainContent = () => {
   );
 };
 
-export default MainContent;
+export default GridContainer;

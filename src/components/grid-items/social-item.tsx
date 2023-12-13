@@ -1,8 +1,6 @@
 import { GridItemInterface } from "@/config/grid-items";
-import Image from "next/image";
-import React from "react";
-import Icon from "../Icon";
-import GridItemButton from "../GridItemButton";
+import Icon from "../icon";
+import GridItemButton from "../grid-item-button";
 import Link from "next/link";
 
 const SocialItem = ({ item }: { item: GridItemInterface }) => {

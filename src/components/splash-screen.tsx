@@ -1,5 +1,4 @@
-import React from "react";
-import Preloader from "./preloader";
+import Preloader from "./pre-loader";
 
 const SplashScreen = () => {
   return (

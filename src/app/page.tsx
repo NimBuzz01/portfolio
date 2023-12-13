@@ -1,5 +1,5 @@
 "use client";
-import SplashScreen from "@/components/SplashScreen";
+import SplashScreen from "@/components/splash-screen";
 import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
@@ -9,7 +9,7 @@ export default function Home() {
   const isHome = pathname === "/";
   const [isLoading, setIsLoading] = useState(isHome);
 
-  const MainBody = dynamic(() => import("@/components/layout/MainBody"));
+  const MainBody = dynamic(() => import("@/components/layout/main-container"));
 
   useEffect(() => {
     if (isLoading) {

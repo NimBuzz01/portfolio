@@ -1,10 +1,9 @@
 import { ChevronDown } from "lucide-react";
-import React from "react";
-import Footer from "./Footer";
-import MainContent from "./MainContent";
-import ProfileInfo from "./ProfileInfo";
+import MainContent from "./grid-container";
+import ProfileInfo from "./profile-info";
+import Footer from "./footer";
 
-const MainBody = () => {
+const MainContainer = () => {
   return (
     <main className="flex flex-col justify-center h-full xl:flex-row flex-1 w-full gap-10 bg-slate-100 dark:bg-black">
       <div className="flex-1 p-6 max-w-md">
@@ -30,4 +29,4 @@ const MainBody = () => {
   );
 };
 
-export default MainBody;
+export default MainContainer;
