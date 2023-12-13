@@ -3,7 +3,7 @@ import GridItemButton from "../grid-item-button";
 import Link from "next/link";
 import Icon from "../icon";
 
-const SocialItem = ({ item }: { item: GridItemInterface }) => {
+const Social = ({ item }: { item: GridItemInterface }) => {
   return (
     <div>
       <div className="flex items-center justify-between">
@@ -39,4 +39,4 @@ const SocialItem = ({ item }: { item: GridItemInterface }) => {
   );
 };
 
-export default SocialItem;
+export default Social;

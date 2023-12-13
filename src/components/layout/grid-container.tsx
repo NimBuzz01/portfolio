@@ -1,9 +1,9 @@
 import { gridItems } from "@/config/grid-items";
 import GridItem from "../grid-item";
-import SocialItem from "../grid-items/social-item";
-import ExperienceItem from "../grid-items/experience-item";
-import ProjectItem from "../grid-items/project-item";
-import SkillItem from "../grid-items/skill-item";
+import Social from "../grid-items/social";
+import Experience from "../grid-items/experience";
+import Project from "../grid-items/project";
+import Skill from "../grid-items/skill";
 import { stagger, useAnimate } from "framer-motion";
 import { useEffect } from "react";
 
@@ -41,13 +41,13 @@ const GridContainer = () => {
         return (
           <GridItem key={item.title + index} size={item.layout}>
             {item.type === "social" ? (
-              <SocialItem item={item} />
+              <Social item={item} />
             ) : item.type === "experience" ? (
-              <ExperienceItem item={item} />
+              <Experience item={item} />
             ) : item.type === "project" ? (
-              <ProjectItem item={item} />
+              <Project item={item} />
             ) : item.type === "skill" ? (
-              <SkillItem item={item} />
+              <Skill item={item} />
             ) : (
               <div>Need to create new component type.</div>
             )}

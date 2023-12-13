@@ -35,9 +35,7 @@ export const gridItems: GridItemInterface[] = [
     type: "social",
     title: "LinkedIn",
     icon: {
-      default: "/icons/github-dark.png",
-      light: "/icons/github-dark.png",
-      dark: "/icons/github-white.png",
+      default: "/icons/linkedin.png",
     },
     username: "niamatm",
     color: "#0077b5",
@@ -46,15 +44,13 @@ export const gridItems: GridItemInterface[] = [
   },
   {
     layout: "2x2",
-    type: "social",
+    type: "experience",
     title: "WSO2",
     icon: {
-      default: "/icons/github-dark.png",
-      light: "/icons/github-dark.png",
-      dark: "/icons/github-white.png",
+      default: "/icons/wso2.png",
     },
     description:
-      "Software Engineer Intern 2022-2023. Worked on various web development projects.",
+      "Software Engineer Intern 2022-2023. Worked on various React and Java projects.",
     color: "#28a745",
   },
   {

@@ -3,7 +3,7 @@ import Link from "next/link";
 import GridItemButton from "../grid-item-button";
 import Icon from "../icon";
 
-const ProjectItem = ({ item }: { item: GridItemInterface }) => {
+const Project = ({ item }: { item: GridItemInterface }) => {
   return (
     <>
       {item.layout === "2x1" ? (
@@ -47,4 +47,4 @@ const ProjectItem = ({ item }: { item: GridItemInterface }) => {
   );
 };
 
-export default ProjectItem;
+export default Project;

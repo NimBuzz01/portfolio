@@ -1,7 +1,7 @@
 import { GridItemInterface } from "@/config/grid-items";
 import Image from "next/image";
 
-const SkillItem = ({ item }: { item: GridItemInterface }) => {
+const Skill = ({ item }: { item: GridItemInterface }) => {
   return (
     <div className="flex flex-col items-end justify-end w-full h-full overflow-hidden">
       <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-neutral-950/20 to-neutral-950/60" />
@@ -32,4 +32,4 @@ const SkillItem = ({ item }: { item: GridItemInterface }) => {
   );
 };
 
-export default SkillItem;
+export default Skill;
