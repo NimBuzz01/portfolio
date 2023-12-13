@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="w-full p-4 xl:p-0">
       <Separator className="my-4" />
-      <div className="flex flex-wrap justify-between gap-1 items-center text-xs text-neutral-500">
+      <div className="flex flex-wrap justify-between gap-1 items-center text-xs text-neutral-500 dark:text-neutral-400">
         <div className="flex items-center">
           <p>
             Built by{" "}

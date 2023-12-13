@@ -7,7 +7,7 @@ import SkillItem from "../grid-items/skill-item";
 
 const GridContainer = () => {
   return (
-    <div className="w-full h-full overflow-y-auto scrollbar-none scrollbar-thumb-neutral-500 scrollbar-track-gray-100 p-4 sm:p-6 grid grid-cols-4 auto-rows-[76px] gap-3 sm:gap-6">
+    <div className="w-full h-full overflow-y-scroll scrollbar-none scrollbar-thumb-neutral-500 scrollbar-track-gray-100 p-4 sm:p-6 grid grid-cols-4 auto-rows-[76px] gap-3 sm:gap-6">
       {gridItems.map((item, index) => {
         return (
           <GridItem key={item.title + index} size={item.layout}>

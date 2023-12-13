@@ -30,9 +30,11 @@ const ProjectItem = ({ item }: { item: GridItemInterface }) => {
           </div>
           <div className="mt-2">
             <div className="text-lg font-semibold">{item.title}</div>
-            <div className="text-sm text-neutral-500">{item.username}</div>
+            <div className="text-sm text-neutral-500 dark:text-neutral-400">
+              {item.username}
+            </div>
             {item.description && (
-              <div className="mt-1 text-sm text-neutral-500 line-clamp-2">
+              <div className="mt-1 text-sm text-neutral-500 dark:text-neutral-400 line-clamp-2">
                 {item.description}
               </div>
             )}

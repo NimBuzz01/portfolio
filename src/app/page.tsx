@@ -9,7 +9,9 @@ export default function Home() {
   const isHome = pathname === "/";
   const [isLoading, setIsLoading] = useState(isHome);
 
-  const MainBody = dynamic(() => import("@/components/layout/main-container"));
+  const MainContainer = dynamic(
+    () => import("@/components/layout/main-container")
+  );
 
   useEffect(() => {
     if (isLoading) {
@@ -19,5 +21,5 @@ export default function Home() {
       return;
     }
   }, [isLoading]);
-  return <>{isLoading && isHome ? <SplashScreen /> : <MainBody />}</>;
+  return <>{isLoading && isHome ? <SplashScreen /> : <MainContainer />}</>;
 }

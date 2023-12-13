@@ -4,9 +4,9 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import Link from "next/link";
 
-const ProfileInfo = () => {
+const ProfileContainer = () => {
   return (
-    <div className="flex flex-col space-y-6">
+    <div className="flex flex-col w-full space-y-6">
       <Image
         src={profileInfo.image}
         alt={profileInfo.name}
@@ -21,7 +21,7 @@ const ProfileInfo = () => {
           {profileInfo.title}
         </p>
         <h1 className="text-3xl sm:text-4xl font-bold ">{profileInfo.name}</h1>
-        <p className="text-xl sm:text-2xl font-light text-neutral-500">
+        <p className="text-xl sm:text-2xl font-light text-neutral-500 dark:text-neutral-400">
           {profileInfo.bio}
         </p>
       </div>
@@ -41,4 +41,4 @@ const ProfileInfo = () => {
   );
 };
 
-export default ProfileInfo;
+export default ProfileContainer;
