@@ -10,7 +10,7 @@ const ToggleTheme = () => {
 
   useEffect(() => {
     setTheme(checked ? "light" : "dark");
-  }, [checked]);
+  }, [checked, setTheme]);
 
   return (
     <div className="flex items-center gap-1 transition-all">

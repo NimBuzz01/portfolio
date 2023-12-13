@@ -1,7 +1,7 @@
 import { GridItemInterface } from "@/config/grid-items";
 import Link from "next/link";
-import Icon from "../icon";
 import GridItemButton from "../grid-item-button";
+import Icon from "../icon";
 
 const ProjectItem = ({ item }: { item: GridItemInterface }) => {
   return (
