@@ -78,29 +78,26 @@ export const gridItems: GridItemInterface[] = [
   {
     layout: "1x2",
     type: "social",
-    title: "Maps",
+    title: "Facebook",
     icon: {
-      default: "/icons/github-dark.png",
-      light: "/icons/github-dark.png",
-      dark: "/icons/github-white.png",
+      default: "/icons/facebook.png",
     },
-    username: "jane_doe",
+    username: "Niamat Marjan",
     color: "#0e76a8",
-    buttonTitle: "Connect",
-    buttonLink: "https://linkedin.com/in/jane_doe",
+    buttonTitle: "View Profile",
+    buttonLink: "https://www.facebook.com/profile.php?id=100005175947537",
   },
   {
     layout: "1x2",
-    type: "project",
-    title: "Button",
+    type: "social",
+    title: "Instagram",
     icon: {
-      default: "/icons/github-dark.png",
-      light: "/icons/github-dark.png",
-      dark: "/icons/github-white.png",
+      default: "/icons/instagram.png",
     },
     color: "#ff9800",
-    buttonTitle: "Shop Now",
-    buttonLink: "https://example.com/shop",
+    username: "_niamat",
+    buttonTitle: "View Profile",
+    buttonLink: "https://www.instagram.com/_niamat/",
   },
   {
     layout: "2x1",
@@ -129,9 +126,9 @@ export const gridItems: GridItemInterface[] = [
     type: "project",
     title: "ZRI Adventures",
     icon: {
-      default: "/icons/github-dark.png",
-      light: "/icons/github-dark.png",
-      dark: "/icons/github-white.png",
+      default: "/icons/zri-dark.png",
+      light: "/icons/zri-dark.png",
+      dark: "/icons/zri-white.png",
     },
     description:
       "Worked on both frontend and backend development using Next.js and Strapi CMS",
@@ -141,15 +138,15 @@ export const gridItems: GridItemInterface[] = [
   {
     layout: "2x2",
     type: "project",
-    title: "ZRI Adventures",
+    title: "Portfolio",
     icon: {
       default: "/icons/github-dark.png",
       light: "/icons/github-dark.png",
       dark: "/icons/github-white.png",
     },
     description:
-      "Worked on both frontend and backend development using Next.js and Strapi CMS",
-    buttonLink: "https://zriadventures.com",
-    buttonTitle: "Visit Website",
+      "Portfolio website built using Next.js, Tailwind CSS and TypeScript",
+    buttonLink: "https://github.com/NimBuzz01/portfolio",
+    buttonTitle: "View Repository",
   },
 ];
