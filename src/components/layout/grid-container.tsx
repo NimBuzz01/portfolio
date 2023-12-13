@@ -13,7 +13,6 @@ const GridContainer = () => {
     startDelay: 0.5,
   });
 
-  // ANIMATION
   useEffect(() => {
     if (scope.current) {
       animate(
