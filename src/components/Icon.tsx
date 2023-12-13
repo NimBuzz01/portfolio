@@ -1,12 +1,22 @@
+"use client";
+import { useTheme } from "next-themes";
 import Image from "next/image";
 
-const Icon = ({ icon }: { icon: string }) => {
+const Icon = ({
+  icon,
+}: {
+  icon: { default: string; light?: string; dark?: string };
+}) => {
+  const { theme } = useTheme();
+  const iconSrc =
+    theme === "light" ? icon.light || icon.default : icon.dark || icon.default;
+
   return (
     <Image
-      src={icon}
+      src={iconSrc}
       alt={"Icon Image"}
-      width={40}
-      height={40}
+      width={30}
+      height={30}
       loading="lazy"
       style={{ height: "auto", width: "auto" }}
     />
